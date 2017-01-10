@@ -1,0 +1,334 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}body,button,input,select,textarea{font:12px/1.5 Tahoma, Helvetica,Arial,\5b8b\4f53,sans-serif;color:#000;}h1{font-size: 18px;}h2{font-size: 16px;}h3{font-size:28px; }h4,h5,h6 {font-size:24px;}address,cite,dfn,em,var{font-style:normal;}code,kbd,pre,samp,tt{font-family:"courier new",courier,monospace;}small{font-size:12px;}ul,ol{list-style:none;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}label{vertical-align:middle}legend{color:#000;}fieldset,img{border:0;}blockquote, q {quotes: none;}blockquote:before, blockquote:after, q:before, q:after {content:'';content:none;}
+button,input,select,textarea{font-size:100%;font-family:"Verdana";vertical-align:middle;}table{border-collapse:collapse;border-spacing:0;}:focus {outline:0;}
+hr{border: none;height: 1px;}
+html{overflow-y: scroll;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:underline;}
+.clear{clear:both;height:0;line-height:0;font-size:0;}
+i,em{font-style:normal;}
+html {font-size: 62.5%;/*10 ÷ 16 × 100% = 62.5%*/}
+body {font-size: 2.8rem;/*2.8 × 10px = 28px */font-family:"Microsoft YaHei";}
+
+/*-- public global  --*/
+.general{background:url(../images/body-bg.png) repeat left top transparent;}
+.general img{display:block;}
+.bt-bg{background:url(../images/bt-bg.png) repeat-x left bottom transparent;}
+.hidden {display:none !important;}
+.footer{padding-top:73px;background:url(../images/footer-bg.png) repeat-x left top #fff;}
+#jiathis_weixin_share{display:none;}
+
+/* 导航css */
+.nav{text-align:center;height:78px;border-top:2px solid #ff5101;}
+.nav ul{display:inline-block;}
+.nav ul li{float:left;width:160px;height:78px;}
+.nav ul li a{display:block;text-align:center;color:#fc6605;border-top:2px solid #fc521f;margin-top:-2px;text-decoration:none;}
+.nav ul li.cur a,.nav ul li a:hover{color:#84ba45;border-top:2px solid #84ba45;}
+
+/* 首页内容区域  */
+.fir-sc{display:inline-block;overflow:hidden;}
+.sec-sc{background-color:#fff;}
+.thi-sc{background-color:#fff;}
+
+/*-- 首页 --*/
+.header .logo {background:url("../images/logo.png") no-repeat;width:256px;height:88px;margin:38px auto 31px;text-indent:-9999px;}
+
+.home-content {text-align:center;}
+.content-container {padding-bottom:-20px;}
+
+/* icon list */
+.list-icon {margin:60px 0 0 25px;overflow:hidden;}
+.list-icon li {float:left;margin-right:46px;padding-top:152px;text-align:center;font-size:28px;color:#555;width:153px;height:80px;overflow:hidden;}
+.list-icon li.any-time {background:url("../images/anyTime-1000.png") no-repeat;}
+.list-icon li.get-order{background:url("../images/order-1000.png") no-repeat;}
+.list-icon li.freedom{background:url("../images/freedom-1000.png") no-repeat;}
+.list-icon li.income{background:url("../images/income-1000.png") no-repeat;}
+.list-icon li.fashion{background:url("../images/fashion-1000.png") no-repeat;}
+.list-icon li.last-col{margin-right:0;}
+.list-icon li i {color:#fd8023;}
+
+/* public */
+.container-iphone {text-align:center;overflow:hidden;}
+.container-iphone p {line-height:38px;color:#555;overflow:hidden;}
+.container-iphone p.orange {color:#ff7900;}
+.container-iphone p.margin26{margin-top:26px;}
+
+.android-iphone-nd {margin:33px auto 0;overflow:hidden;}
+.android-iphone-nd span{display:none;}
+.iphone-down-nd,.android-down-nd{float:left;display:block;text-indent:-9999px;font-size:0px;background:url(about:blank);}
+
+.iphone-down-nd{background:url("../images/iphone-720.png") no-repeat left top transparent;}
+.android-down-nd{background:url("../images/android-720.png") no-repeat left top transparent;}
+.iphone-down-no-nd{background:url("../images/iphone-gray.png") no-repeat left top transparent;cursor:default;}
+
+.content-img-nd ,.content-img-rd,.content-img-form{margin:0 auto;background:url('../images/sc02-720.png') no-repeat;text-indent:-9999px;}
+.content-img-rd {background:url("../images/sc03-720.png") no-repeat;}
+.content-img-form {background:url("../images/sc04-720.png") no-repeat;}
+
+/* img */
+.sec-sc {padding-bottom:10px;}
+.thr-sc {padding-bottom:10px;}
+/* iphone android 底部*/
+.foot-container {display:inline-block;text-align:center;width:100%;background:#fff;padding-bottom:22px;overflow:hidden;}
+.foot-logo {width:95px;height:34px;background:url("../images/foot-logo.png") no-repeat;margin:32px auto 0;text-indent:-9999px;}
+.foot-container .desc, .about-method,.copyright{width:100%;display:inline-block;margin:0 auto;color:#999;font-size:2.4rem;text-align:center;font-family:"Microsoft yahei";}
+.foot-container .desc{margin-top:15px;}
+.foot-container .about-method {color:#666;margin-top:15px;}
+.foot-container .about-method span{color:#fc7a26;}
+.foot-container .copyright {color:#a0a0a0;margin-top:20px;}
+.foot-container .footer{padding-top:10px;background:url("../images/footer-bg.png") repeat-x left -63px #fff;}
+
+/* 最小宽度1000样式
+ ======================================================================================================*/
+ @media screen and (min-width:1000px) {
+
+	.container-iphone {display:none;}
+	.footer {display:none;}
+
+	/*-- 导航 --*/
+	.nav-ul {*width:990px;*margin:0 auto;}
+	.list-icon {*width:950px;*margin:60px 0 0 25px;}
+	.nav ul li {margin:0 85px;}
+	.nav ul li a {height:76px;line-height:76px;font-size:24px;}
+	.nav ul li.cur a,.nav ul li a:hover {line-height:76px;}
+
+	/*--  底部 */
+	.footer-1000{background:url(../images/footer-bg.png) repeat-x left top #fff;padding-top:73px;}
+	.footer-inner-1000 {position:relative;width:1000px;background:url('../images/foot.png') no-repeat;height:180px;margin:0 auto;}
+	.foot-container-1000 .desc{position:absolute;top:88px;left:79px;color:#555;font-size:18px;}
+	.footer-1000 .about-method {position:absolute;top:44px;left:452px;width:240px;}
+	.footer-1000 .about-method span {display:block;color:#fc6605;font-size:30px;}
+	.footer-1000 .about-method em{display:block;color:#555;font-size:18px;margin-top:-6px;}
+	.footer-1000 .share-1000{position:absolute;top:46px;left:745px;}
+	.share-1000 .sina,.share-1000 .weixin,.share-1000 .tecent{float:left;width:72px;height:70px;text-indent:-9999px;}
+	.share-1000 .weixin,.share-1000 .tecent {display:inline;margin-left:18px;}
+	
+	/************************************
+	 * 首页--内容区域 ****************************/
+	.top-container {*width:974px;*margin:0 auto;overflow:hidden;}
+	.content-iphone {float:left;display:inline;margin:24px 0 0 49px;background:url('../images/iphoneLeft.png') no-repeat;width:276px;height:691px;}
+	.content-iphone-desc {float:right;display:inline;margin:40px 20px 0 0;overflow:hidden;}
+	.zxd-h3 {color:#ff7922;font-size:40px;text-align:left;}
+	.zxd-tips span {display:block;font-size:24px;line-height:25px;color:#ff7922;text-align:left;}
+	.android-iphone {margin-bottom:90px;margin-top:25px;overflow:hidden;}
+	.iphone-down ,.android-down{float:left;width:216px;padding-left:44px;height:84px;margin-right:12px;line-height:84px;font-size:30px;color:#fff;
+	background:url("../images/iphone_load.png") no-repeat;cursor:pointer;border-bottom:5px solid #fcd5be;}
+	.android-iphone a:hover{text-decoration:none;}
+	.android-down {background:url("../images/android_load.png") no-repeat;}
+	.iphone-down-no {background:url("../images/no-iphone.png") no-repeat;border-bottom:5px solid #bdbdbd;text-indent:-9999px;cursor:default;}
+	.content-iphone-desc p {text-align:left;margin-top:30px;}
+	.content-iphone-desc p span {display:block;font-size:24px;line-height:30px;color:#555;}
+	.content-iphone-desc p span.orange{color:#ff7922;}
+	/* img */
+	.sec-sc {padding-bottom:10px;}
+	.thr-sc {padding-bottom:10px;}
+	.content-img-nd ,.content-img-rd,.content-img-form{width:1000px;height:590px;margin:0 auto;background:url('../images/one1000.png') no-repeat;text-indent:-9999px;}
+	.content-img-rd {height:810px;background:url("../images/two1000.png") no-repeat;}
+	.content-img-form {height:738px;background:url("../images/three1000.png") no-repeat;}
+	
+	/************************************
+	 * 先锋官--内容区域 ****************************/
+	/*-- 鲜锋官 --*/
+	.xfg-container{position:relative;width:1000px;margin:0 auto;overflow:hidden;}
+	.sec-good{display:inline-block;width:1000px;height:214px;overflow:hidden;background:url(../images/xfg02.png) no-repeat left top transparent;}
+	.thr-maketo{display:inline-block;width:1000px;height:421px;overflow:hidden;background:url(../images/xfg03.png) no-repeat left top transparent;}
+	.thi-lists{display:inline-block;width:1000px;height:658px;overflow:hidden;background:url(../images/xfg04.png) no-repeat left top transparent;}
+	.fiv-info{display:inline-block;width:1000px;height:609px;overflow:hidden;background:url(../images/xfg05.png) no-repeat left top transparent;}
+	.six-qa{display:inline-block;width:1000px;height:855px;overflow:hidden;background:url(../images/xfg06.png) no-repeat left top transparent;}
+	.fir-what h3, .fir-what p,.fir-what h4,
+	.sec-good h3, .sec-good ul,
+	.thr-maketo h3, .thr-maketo ul,
+	.thi-lists h3, .thi-lists ul,
+	.fiv-info h3, .fiv-info ul,
+	.six-qa h3, .six-qa ul{display:none;}
+
+	.xfg-app-load{height:366px; padding-left:361px;padding-top:224px;overflow:hidden;background:url(../images/xfg01.png) no-repeat left top transparent;}
+	.xfg-app-load li{position:relative;float:left;width:160px;margin-right:60px;height:279px;}
+	.xfg-app-load li a{display:block;width:160px;height:60px;text-indent:-9999px;}
+	.xfg-app-load li.android-app{margin-top:-1px;}
+	.xfg-app-load li.iphohe-app a{background:url(../images/iphone-load.png) no-repeat left top transparent;}
+	.xfg-app-load li.android-app a{background:url(../images/android-load2.png) no-repeat left top transparent;}
+	.xfg-app-load li .ph{padding-top:20px;display:block;}
+	.xfg-app-load li .ph img{width:160px;}
+	.xfg-app-load li .mask{position:absolute;left:0;top:0;width:160px;height:279px;background:url(../images/mask.png) no-repeat left top transparent;}
+ }
+
+/* min-width:320px 
+ * 针对屏幕宽度为320px 的css 
+ * min-width:320 和 max-width:639之间 公用样式也包含在里面
+ =======================================================================================================*/
+@media (min-width: 320px) and (max-width:639px){
+
+	.top-container {display:none;}
+	.footer-1000 {display:none;}
+	.header .logo {width:160px;height:56px;background-size:160px 56px;margin:26px auto 14px;}
+	
+	.nav{height:32px;min-width:320px;margin:0 auto;}
+	.nav ul li{width:70px;float:left;height:32px;margin:0 12px;}
+	.nav ul li a{height:32px;line-height:32px;font-size:1.4rem;}
+	.nav ul li.cur a,.nav ul li a:hover{line-height:32px;}
+	
+	.foot-logo {width:64px;height:23px;margin:20px auto 0;background-size:64px 23px;}
+	.foot-container .desc {margin-top:13px;}
+	.foot-container .desc, .about-method,.copyright{color:#999;font-size:1.3rem;text-align:center;font-family:"Microsoft yahei";}
+	.foot-container .copyright {color:#a0a0a0;margin-top:13px;}
+	.footer{padding-top:10px;background:url(../images/footer-bg.png) repeat-x left -63px #fff;}
+
+	/************************************
+	 * 首页 ****************************/
+	.container-iphone {max-width:320px;margin:16px auto 0;overflow:hidden;}
+	.container-iphone p {font-size:1.2rem;line-height:2.4rem;}
+	.android-iphone-nd {max-width:320px;height:34px;margin:24px auto 0;overflow:hidden;}
+	.iphone-down-nd,.android-down-nd{width:107px;height:34px;background-size:107px 34px;}
+	.iphone-down-nd{margin:0 32px;}
+	.iphone-down-no-nd{cursor:default;}
+
+	.content-container .list-icon{margin:26px auto 0;height:118px;overflow:hidden;}
+	.list-icon li {float:left;margin:0 3px;padding-top:68px;font-size:1.3rem;width:57px;}
+	.list-icon li.any-time {background-size:auto 56px;}
+	.list-icon li.get-order{background-size:auto 56px;}
+	.list-icon li.freedom{background-size:auto 56px;}
+	.list-icon li.income{background-size:auto 56px;}
+	.list-icon li.fashion{background-size:auto 56px;}
+
+	.content-img-nd {height:408px;background-size:auto 408px;}
+	.content-img-rd {height:384px;background-size:auto 384px;}
+	.content-img-form {height:380px;background-size:auto 380px;}
+	
+	/************************************
+	 * 鲜锋官--内容区域 ****************************/
+	.fir-what,
+	.sec-good,
+	.thr-maketo,
+	.thi-lists,
+	.fiv-info,
+	.six-qa{padding:0 12px 5px;border-bottom:1px solid #e5e5e5;}
+	
+	.xfg-container h3 {color:#f60;font-size:1.3rem;margin-top:12px;}
+	.fir-what p{color:#000;margin-top:14px;font-size:1.3rem;line-height:2.2rem;}
+	.fir-what p b{color:#fc6605;padding-right:2px;font-size:1.3rem;}
+	.fir-what h4{font-size:1.3rem;color:#666;margin-top:12px;font-weight:bold;}
+
+	.xfg-app{max-width:320px;padding:5px 0 20px;overflow:hidden;}
+	.xfg-app li {float:left;width:107px;height:34px;overflow:hidden;}
+	.xfg-app li.iphohe-app{margin:0 24px;}
+	.xfg-app li a{display:block;width:107px;height:34px;text-indent:-9999px;}
+	.xfg-app li.iphohe-app a{background:url(../images/iphone-720.png) no-repeat left top; background-size:107px 34px;}
+	.xfg-app li.iphohe-no a{background:url(../images/iphone-gray.png) no-repeat left top;background-size:107px 34px;}
+	.xfg-app li.android-app a{background:url(../images/android-load.png) no-repeat left top;background-size:107px 34px;}
+
+	.xfg-app li .ph{display:none;}
+
+	.sec-good li{line-height:24px;font-size:1.3rem;font-family:"Microsoft YaHei";color:#4a4a4a;padding-bottom:10px;}
+
+	.thr-maketo li{line-height:24px;font-size:1.3rem;font-family:"Microsoft YaHei";color:#4a4a4a;}
+	.thi-lists li{line-height:24px;font-size:1.3rem;font-family:"Microsoft YaHei";color:#4a4a4a;}
+	.thi-lists li i{display:block;font-style:normal;color:#555;font-weight:bold;}
+	.thi-lists li .tips{color:#7fbd2f;padding-left:18px;background:url(../images/light-small.png) no-repeat left center;}
+	.fiv-info li{line-height:24px;font-size:1.3rem;font-family:"Microsoft YaHei";color:#4a4a4a;}
+		
+
+	.num-type li{padding-bottom:12px;overflow:hidden;}
+	.num-type li b{float:left;width:6%;color:#7fbd2f;font-family:"Arial";font-size:1.3rem;font-weight:normal;vertical-align:top;}
+	.num-type li span{float:left;width:94%;font-size:1.3rem;}
+	
+    
+	.six-qa{padding-bottom:30px;border:0 none;overflow:hidden;}
+	.six-qa li{width:100%;padding-bottom:10px;overflow:hidden;}
+	.six-qa li .q{line-height:22px;color:#555;font-size:1.3rem;font-weight:bold;overflow:hidden;}
+	.six-qa li .q b{float:left;color:#f60;width:6%;font-family:"Arial";}
+	.six-qa li .q span{float:left;width:94%;vertical-align:top;}
+	.six-qa li .a{line-height:22px;color:#888;font-size:1.3rem;overflow:hidden;}
+	.six-qa li .a b{float:left;color:#81bb3b;font-size:1.3rem;width:6%;font-family:"Arial";}
+	.six-qa li .a span{float:left;width:94%;vertical-align:top;} 
+	
+}
+/* 针对屏幕宽度为400px 
+ =======================================================================================================*/
+@media (min-width: 400px) and (max-width:401px){
+	
+	.nav{min-width:400px;}
+	.nav ul li{width:106px;margin:0 12px;}
+	.nav ul li a{font-size:1.8rem;}
+	.foot-container .desc, .about-method,.copyright{font-size:1.6rem;}
+
+	/************************************
+	 * 首页 ****************************/
+	.container-iphone {min-width:400px;}
+	.container-iphone p {font-size:1.8rem;}
+	.android-iphone-nd {min-width:400px;height:51px;}
+	.iphone-down-nd,.android-down-nd{width:160px;height:51px;background-size:160px 51px;}
+	.iphone-down-nd{margin:0 24px;}
+	.list-icon li {font-size:1.6rem;width:72px;}
+	.list-icon li.any-time {background-size:71px 68px;}
+	.list-icon li.get-order{background-size:71px 67px;}
+	.list-icon li.freedom{background-size:72px 69px;}
+	.list-icon li.income{background-size:69px 68px;}
+	.list-icon li.fashion{background-size:72px 67px;}
+	.content-img-nd {height:513px;background-size:auto 513px;}
+	.content-img-rd {height:480px;background-size:auto 480px;}
+	.content-img-form {height:476px;background-size:auto 476px;}
+
+	/************************************
+	 * 先锋官--内容区域 ****************************/
+	.xfg-container h3 {font-size:1.6rem;}
+	.fir-what p{font-size:1.6rem;line-height:2.2rem;}
+	.fir-what p b{font-size:1.6rem;}
+	.fir-what h4{font-size:1.6rem;}
+
+	.xfg-app{max-width:320px;padding:5px 0 20px;overflow:hidden;}
+	.xfg-app li {float:left;width:107px;height:34px;overflow:hidden;}
+	.xfg-app li.iphohe-app{margin:0 24px;}
+	.xfg-app li a{display:block;width:107px;height:34px;text-indent:-9999px;}
+	.xfg-app li.iphohe-app a{background:url(../images/iphone-720.png) no-repeat left top; background-size:107px 34px;}
+	.xfg-app li.iphohe-no a{background:url(../images/iphone-gray.png) no-repeat left top;background-size:107px 34px;}
+	.xfg-app li.android-app a{background:url(../images/android-load.png) no-repeat left top;background-size:107px 34px;}
+
+	.xfg-app li .ph{display:none;}
+
+	.sec-good li{line-height:24px;font-size:1.6rem;}
+
+	.thr-maketo li{line-height:24px;font-size:1.6rem;}
+	.thi-lists li{line-height:24px;font-size:1.6rem;}
+	.fiv-info li{line-height:24px;font-size:1.6rem;}
+		
+
+	.num-type li{padding-bottom:12px;overflow:hidden;}
+	.num-type li b{font-size:1.6rem;}
+	.num-type li span{font-size:1.6rem;}
+	
+	.six-qa li .q{line-height:26px;font-size:1.6rem;}
+	.six-qa li .a{line-height:26px;font-size:1.6rem;}
+	.six-qa li .a b{font-size:1.6rem;}
+}
+/* 针对手机屏幕的宽度是360 384等屏幕的宽度
+ * max-width:384来计算 但是边距 字体大小等还是安装360px来计算
+ *****************************************/
+@media (min-width:360px) and (max-width: 399px) {
+	
+	.nav{max-width:384px;}
+	.nav ul li{width:95px;margin:0 10px;}
+	.nav ul li a{font-size:1.6rem;}
+	.foot-container .desc, .about-method,.copyright{font-size:1.4rem;}
+	
+	/************************************
+	 * 首页 ****************************/
+	.container-iphone {max-width:384px;}
+	.container-iphone p {font-size:1.6rem;}
+	.android-iphone-nd {max-width:384px;height:45px;}
+	.iphone-down-nd,.android-down-nd{width:144px;height:45px;background-size:144px 45px;}
+
+	.iphone-down-nd{margin:0 18px;}
+
+	.list-icon li {font-size:1.4rem;width:63px;}
+	.list-icon li.any-time {background-size:auto 63px;}
+	.list-icon li.get-order{background-size:auto 63px;}
+	.list-icon li.freedom{background-size:auto 63px;}
+	.list-icon li.income{background-size:auto 63px;}
+	.list-icon li.fashion{background-size:auto 63px;}
+	.content-img-nd {height:461px;background-size:auto 461px;}
+	.content-img-rd {height:432px;background-size:auto 432px;}
+	.content-img-form {height:418px;background-size:auto 418px;}
+	
+	/************************************
+	 * 先锋官--内容区域 ****************************/
+}
